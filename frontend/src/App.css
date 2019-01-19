@@ -1,6 +1,27 @@
+body {
+  text-align: center;
+  background: url("bgPic5.jpg") no-repeat center center fixed;
+   -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
 .App {
   text-align: center;
+
+  }
+
+.twitterIcon{
+  align-content: center;
+  left:45%;
+  top:45%;
+  position: absolute;
+  box-shadow: #61dafb;
+  text-align: center;
 }
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
