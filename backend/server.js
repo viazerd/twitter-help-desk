@@ -9,6 +9,9 @@ const PORT = 8000;
 mongoose.connect('mongodb://127.0.0.1:27017/twitter-helpdesk',{useNewUrlParser:true});
 const connection = mongoose.connection;
 
+connection.once('open',function(){
+    console.log("MongoDB connected!!");
+});
 
 
 app.listen(PORT,function () {
