@@ -51,17 +51,25 @@ app.use(session({secret:'whatever',
   res.render('index.jade');
 });*/
 
+app.use(passport.initialize());
+app.use(passport.session());
+
 app.get('/',function (req,res) {
-    res.render('index.jade')
+    res.render('index.jade',{user:req.user});
+    console.log(req.user);
 });
 
 app.get('/twitter/login',passport.authenticate('twitter'));
 app.get('/twitter/return',passport.authenticate('twitter',{
   failureRedirect:'/'
 }),function (req,res) {
-
+    res.redirect('/');
 });
-
+app.get('/auth/twitter/return',
+    passport.authenticate('twitter', {
+        successRedirect: '/twitter/login',
+        failureRedirect: '/' }),
+    function(req, res) {});
 
 
 module.exports = app;
