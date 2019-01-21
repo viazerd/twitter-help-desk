@@ -1,26 +1,19 @@
 {
   "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node ./bin/www"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
     "express-session": "^1.15.6",
-    "http": "0.0.0",
-    "node-twitter-signin": "0.0.5",
-    "nodemon": "^1.18.9",
+    "http-errors": "~1.6.2",
+    "jade": "~1.11.0",
+    "morgan": "^1.9.1",
     "passport": "^0.4.0",
-    "passport-twitter": "^1.0.4",
-    "path": "^0.12.7",
-    "socket.io": "^2.2.0",
-    "twit": "^2.2.11",
-    "twitter": "^1.7.1"
+    "passport-twitter": "^1.0.4"
   }
 }
