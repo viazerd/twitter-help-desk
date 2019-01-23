@@ -11,7 +11,7 @@ class App extends Component {
     return (
         <Router>
 
-          <div className="App">
+          <div className="container container-fluid">
             <nav className=" navbar navbar-expand-lg navbar-light bg-light shadow-lg">
               <a className="navbar-brand" href="https://twitter.com/">
                 <img src={logo} width="30" height="30" alt="twitter" target="_blank"/>
